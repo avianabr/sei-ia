@@ -1,0 +1,26 @@
+
+
+o id da minha unidade e 110047993. obtenha informacoes sobre o processo (359.00002002/2025-31)
+
+o id da minha unidade e 110047993. obtenha informacoes sobre o documento 0058865669
+
+o id da minha unidade e 110047993. resuma o documento 0058865669
+
+o id da minha unidade e 110047993.converta para texto plano o conteudo do documento 0058865669
+
+o id da minha unidade e 110047993. os processos (359.00009899/2024-42) e (359.00003020/2024-59) sao semelhantes?
+
+os documentos 0047413427 e 0044891771 sao semelhantes?
+
+sua missao e ordenar de forma crescente os processos 359.00002002/2025-31, 359.00010604/2024-81 e 359.00003020/2024-59  de acordo com prioridade. determine a prioridade de cada processo de acordo com o tipo de procedimento, complexidade da tarefa e prazos definidos. use um valor inteiro de 1 a ate 10 para identificar o grau de prioridade de cado processo. sua respostas deve seguir o exemplo a seguir: 10 - numero do processo - prazo de entrega - tipo de procedimento - complexidade das tarefas.
+
+
+sua missao e gerar uma linha do tempo a partir do conteudo do documento 0058866094 contendo a data, descricao do evento e as respectivas entidades relacionadas. para identificar as entidades utilize apenas pessoas, empresas e localidades. sua resposta deve seguir o modelo a seguir: data do evento - descricao do evento - lista de entidades relaciadas.
+
+compare os processos 359.00002002/2025-31 e 359.00010604/2024-81. de acordo com o tipo de procedimento e prazo de entrega determine a complexidade de cada processo, logo em seguida, determine o processo mais prioritario e proponha um plano de acao com datas e ativdades bem claras ."
+
+analise o conteudo do documento 0058865669 e identifique as entidades contidas no documento e seus respectivos relacionamentos. para identificar as entidades utilize somente pessoas, empresas e localidades. para mapear os relacionamentos entre as entidades identifique as descreva as acoes executadas entre elas. use o exemplo a seguir para gerar sua resposta: ana(pessoa) -> e chefe de -> jose(pessoa). ana(pessoa) -> trabalha na -> prodesp(empresa). prodesp(empresa) -> esta localiza em - sao paulo(localidade).
+
+
+
+

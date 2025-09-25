@@ -1,0 +1,12 @@
+
+POST http://localhost:8000/chat
+
+Content-Type: application/json
+{
+  "message": "What is the status of my process?",
+  "session_id": "ocid1.genaiagentsession.oc1.sa-saopaulo-1.amaaaaaa7mjirbaax7trrizvhybqoat3uf2qmmy5f7bgfj5hhueay25aj6ha"
+}
+
+
+
+

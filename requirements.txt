@@ -1,0 +1,12 @@
+zeep
+fastapi
+uvicorn
+pydantic
+nest_asyncio
+oci[adk]
+langchain
+langchain-community
+langchain-oci
+docling
+langchain-docling
+
