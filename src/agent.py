@@ -110,6 +110,7 @@ def resumir_documento(id_unidade: str, protocolo_documento: str) -> Any:
     llm = ChatOCIGenAI(
         model_id="meta.llama-3.3-70b-instruct",
         service_endpoint="https://inference.generativeai.sa-saopaulo-1.oci.oraclecloud.com",
+        #alterar para o compartment_id do ambiente desejado
         compartment_id="ocid1.compartment.oc1..aaaaaaaamrvydbfbzcb3ys7dln2sl2giax43iuf6zi6uny3inhtu46ummv7a",
         model_kwargs={"temperature": 0},
     )
@@ -205,6 +206,7 @@ def main():
     global sei_client, agent_client, agent
           
     sei_client = Client(
+        #alterar para o ambiente desejado
         url="https://homologacaoia.sei.sp.gov.br/sei/controlador_ws.php?servico=sei",
         sigla_sistema="ORACLE",
         identificacao_servico="8d1db23b8a93f414580c54db9699a67e202816abc14ee782470ea01728d09aba52b34ee9"
@@ -220,7 +222,9 @@ def main():
     agent = Agent(
         client=agent_client,
         display_name="sei-ai",
+        #alterar para o compartment_id do ambiente desejado
         compartment_id="ocid1.compartment.oc1..aaaaaaaamrvydbfbzcb3ys7dln2sl2giax43iuf6zi6uny3inhtu46ummv7a",
+        #alterar para o agent_endpoint_id do ambiente desejado
         agent_endpoint_id="ocid1.genaiagentendpoint.oc1.sa-saopaulo-1.amaaaaaa6g6dsrya5v5x2tonqcww7kfhr6xfqousu7tiib4lzievvypdhm2q",
         description="Um agente para interagir com o sistema SEI.",
         instructions="O id do usuario  e '00029443830'. o id da unidade e 110047993. Use as ferramentas disponíveis para obter informações sobre processos e documentos no sistema SEI. Use a ferramenta rag para pesquisar semanticamente os documentos. Para obter informações sobre um processo, utilize a ferramenta get_processo. Para obter informações sobre um documento, utilize a ferramenta get_documento. Para resumir o conteúdo de um documento, utilize a ferramenta resumir_documento. Para converter o conteúdo de um documento para texto plano, utilize a ferramenta convert_documento. Sempre que possível, forneça respostas detalhadas e completas.",
